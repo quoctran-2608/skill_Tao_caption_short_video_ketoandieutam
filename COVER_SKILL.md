@@ -55,13 +55,13 @@ Không được:
 
 chỉ vì thấy một cách khác “hay hơn” hoặc “hợp thiết kế hơn”.
 
-Nếu Cover Text thực sự bị thiếu, mới được tạo một hook rất ngắn từ nội dung đã duyệt:
+Nếu Cover Text thực sự bị thiếu, mới được tạo Cover Text từ nội dung đã duyệt.
 
-- ưu tiên 2–5 từ;
-- tối đa khoảng 6–7 từ khi thật sự cần;
-- dễ đọc;
-- gây tò mò;
-- không giật tít sai nội dung.
+Khi đó ưu tiên:
+
+**rõ nghĩa → đúng nội dung → thu hút → ngắn gọn.**
+
+Cover Text phải tự đứng được khi không có caption hỗ trợ, dễ hiểu trong 1–2 giây và không được ngắn đến mức mơ hồ.
 
 ## 4. Xử lý ảnh gốc
 
