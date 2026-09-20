@@ -12,9 +12,9 @@ Nhiệm vụ:
 
 **Nguồn video → nội dung TikTok / Facebook Reels / YouTube Shorts / Zalo OA → writing block DRAFT**
 
-Prompt Builder:
+Giao diện:
 
-`index.html`
+`index.html` — phần Bước 1
 
 ## Bước 2 — Ghi Google Sheet
 
@@ -26,12 +26,12 @@ Nhiệm vụ:
 
 **Writing block đã duyệt → giữ nguyên nội dung → upsert VIDEO_MASTER + PUBLISH_QUEUE**
 
-Prompt Builder:
+Giao diện:
 
-`publish.html`
+`index.html` — phần Bước 2
 
 ## Workflow
 
-**Nguồn video → index.html → ChatGPT → writing block → user duyệt → publish.html → ChatGPT → Google Sheet**
+**Nguồn video → index.html/Bước 1 → ChatGPT → writing block → user duyệt → index.html/Bước 2 → ChatGPT → Google Sheet**
 
 Không dùng file này làm skill thực thi. Hãy dùng đúng skill của từng bước ở trên.
