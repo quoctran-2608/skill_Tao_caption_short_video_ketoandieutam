@@ -227,13 +227,28 @@ Trích dẫn:
 
 ### Cover
 
-Nếu chưa có thumbnail:
+Tạo:
 
-**Cover text:** ưu tiên 2–5 từ.
+**Cover Text**
 
-Cover cần dễ đọc, nêu đúng điểm chính, có khả năng tạo tò mò và không cố giật tít.
+Cover Text là hook ngắn để đặt trên ảnh bìa, không phải bản rút gọn máy móc của title hoặc caption.
 
-Nếu đã có thumbnail thì không cần đề xuất lại.
+Yêu cầu:
+
+- ưu tiên 2–5 từ;
+- tối đa khoảng 6–7 từ khi thật sự cần;
+- đọc hiểu trong 1–2 giây;
+- dễ đọc trên điện thoại;
+- đúng nội dung video;
+- có khả năng tạo tò mò;
+- không giật tít sai bản chất;
+- không nhồi từ khóa.
+
+Ưu tiên:
+
+**ngắn → dễ đọc → gây tò mò → đúng nội dung.**
+
+Cover Text này sẽ được dùng nguyên văn ở bước tạo ảnh bìa sau khi user duyệt nội dung.
 
 ## 7. Một vòng tự biên tập
 
