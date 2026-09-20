@@ -93,21 +93,13 @@ Không ghép các từ khóa trong nội dung nguồn thành một câu chỉ đ
 
 Nếu một câu nghe gượng, không sửa từng chữ. Hãy giữ ý và viết lại câu đó từ đầu theo cách một người Việt làm content thực tế sẽ nói.
 
-Khi nội dung nguồn dùng nhiều từ mang tính khái niệm như “hệ thống”, “vận hành”, “quản trị”, “hoạt động bên trong”, “dữ liệu” hoặc cách nói trừu tượng tương tự, không mặc định bê nguyên cách diễn đạt đó sang caption.
+Khi nội dung nguồn dùng nhiều từ mang tính khái niệm hoặc cách nói trừu tượng, không mặc định bê nguyên cách diễn đạt đó sang caption.
 
 Hãy giữ đúng ý nhưng chuyển sang cách nói cụ thể, đời thường và gần trải nghiệm người kinh doanh hơn nếu có thể.
 
-Ưu tiên nói về những thứ người xem thực sự nhìn thấy, gặp phải hoặc phải xử lý.
+Ưu tiên những cách diễn đạt mà người xem có thể hiểu ngay, hình dung được và liên hệ với tình huống thực tế.
 
-Ví dụ:
-
-Không ưu tiên:
-
-> “doanh nghiệp đang hoạt động bên trong một hệ thống”
-
-Nếu ngữ cảnh cho phép, có thể viết tự nhiên hơn:
-
-> “phía sau chuyện bán hàng còn có thuế, ngân hàng, dòng tiền và nhiều thứ liên quan với nhau”
+Không biến nguyên tắc này thành việc cố né mọi từ chuyên môn. Chỉ đổi cách nói khi phiên bản mới rõ hơn và tự nhiên hơn.
 
 ### 4.3. Không cố giữ từ khóa làm câu bị gượng
 
@@ -247,52 +239,46 @@ Tạo:
 
 **Cover Text**
 
-Cover Text là **hook để người đang lướt dừng lại**, không phải tên chủ đề, nhãn phân loại hay bản tóm tắt máy móc của video.
+Cover Text là dòng chữ chính xuất hiện trực tiếp trên ảnh bìa.
 
-Ưu tiên lấy hook từ một trong các điểm mạnh nhất có thật trong video:
+Mục tiêu của Cover Text là giúp người đang lướt:
 
-- một mâu thuẫn;
-- một câu hỏi;
-- một điều người kinh doanh thường chỉ nhìn thấy;
-- một điều họ dễ bỏ sót;
-- một sai lầm quen thuộc;
-- một ý khiến người xem muốn biết phần tiếp theo.
+1. hiểu ngay video đang nói về vấn đề gì;
+2. thấy nội dung có liên quan đến mình;
+3. có lý do để muốn xem tiếp.
 
-Nếu một cụm chữ có thể đặt lên rất nhiều video khác mà vẫn hợp, nó đang quá chung và chưa đủ tốt để làm Cover Text.
+Ưu tiên theo thứ tự:
 
-Không ưu tiên các cụm giống tên chương hoặc tên chủ đề nếu chúng chưa tạo được lực dừng mắt, ví dụ:
+**rõ nghĩa → đúng nội dung → thu hút → ngắn gọn.**
 
-- “Hiểu cuộc chơi”
-- “Quản lý dòng tiền”
-- “Hiểu về thuế”
+Cover Text phải:
 
-Hãy tìm một cách đóng gói cụ thể và có lực hơn từ chính nội dung video.
-
-Ví dụ:
-
-Không ưu tiên:
-
-> Hiểu cuộc chơi
-
-Nếu đúng với nội dung video, tốt hơn có thể là:
-
-> Đừng chỉ nhìn doanh thu
-
-Yêu cầu:
-
-- ưu tiên 2–5 từ;
-- tối đa khoảng 6–7 từ khi thật sự cần;
-- đọc hiểu trong 1–2 giây;
-- dễ đọc trên điện thoại;
-- đúng nội dung video;
-- có khả năng tạo tò mò;
-- không giật tít sai bản chất;
+- tự đứng được khi không có caption hoặc lời thoại hỗ trợ;
+- nói được một ý cụ thể, không chỉ là một khái niệm chung;
+- dễ hiểu trong 1–2 giây;
+- tạo tò mò nhưng không cố tình mập mờ;
+- đúng với nội dung thật của video;
+- không giật tít quá mức;
 - không nhồi từ khóa;
-- không tạo cảm giác câu view rẻ tiền.
+- không ép ngắn đến mức mất nghĩa.
 
-Ưu tiên:
+Nếu phải chọn giữa:
 
-**cụ thể → dễ đọc → có lực dừng mắt → đúng nội dung.**
+- một câu rất ngắn nhưng mơ hồ;
+- và một câu dài hơn một chút nhưng rõ nghĩa;
+
+hãy chọn câu rõ nghĩa.
+
+Không có giới hạn từ cứng.
+
+Hãy viết ngắn nhất có thể nhưng vẫn đủ nghĩa và đủ lực. Thông thường khoảng 3–8 từ là phù hợp, nhưng có thể dài hơn hoặc ngắn hơn nếu cần để giữ sự rõ ràng.
+
+Trước khi chốt Cover Text, tự kiểm tra:
+
+- Nếu chỉ nhìn ảnh bìa mà chưa xem video, người ta có hiểu video đang bàn về vấn đề gì không?
+- Sau khi hiểu chủ đề, họ có lý do để muốn xem tiếp không?
+
+Nếu câu trả lời cho một trong hai là “không”, hãy viết lại Cover Text.
 
 Cover Text này sẽ được dùng **nguyên văn** ở bước tạo ảnh bìa sau khi user duyệt nội dung.
 
