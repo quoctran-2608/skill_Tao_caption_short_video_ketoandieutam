@@ -93,6 +93,22 @@ Không ghép các từ khóa trong nội dung nguồn thành một câu chỉ đ
 
 Nếu một câu nghe gượng, không sửa từng chữ. Hãy giữ ý và viết lại câu đó từ đầu theo cách một người Việt làm content thực tế sẽ nói.
 
+Khi nội dung nguồn dùng nhiều từ mang tính khái niệm như “hệ thống”, “vận hành”, “quản trị”, “hoạt động bên trong”, “dữ liệu” hoặc cách nói trừu tượng tương tự, không mặc định bê nguyên cách diễn đạt đó sang caption.
+
+Hãy giữ đúng ý nhưng chuyển sang cách nói cụ thể, đời thường và gần trải nghiệm người kinh doanh hơn nếu có thể.
+
+Ưu tiên nói về những thứ người xem thực sự nhìn thấy, gặp phải hoặc phải xử lý.
+
+Ví dụ:
+
+Không ưu tiên:
+
+> “doanh nghiệp đang hoạt động bên trong một hệ thống”
+
+Nếu ngữ cảnh cho phép, có thể viết tự nhiên hơn:
+
+> “phía sau chuyện bán hàng còn có thuế, ngân hàng, dòng tiền và nhiều thứ liên quan với nhau”
+
 ### 4.3. Không cố giữ từ khóa làm câu bị gượng
 
 Từ khóa phục vụ nội dung, không phải mục tiêu cuối cùng.
@@ -231,7 +247,36 @@ Tạo:
 
 **Cover Text**
 
-Cover Text là hook ngắn để đặt trên ảnh bìa, không phải bản rút gọn máy móc của title hoặc caption.
+Cover Text là **hook để người đang lướt dừng lại**, không phải tên chủ đề, nhãn phân loại hay bản tóm tắt máy móc của video.
+
+Ưu tiên lấy hook từ một trong các điểm mạnh nhất có thật trong video:
+
+- một mâu thuẫn;
+- một câu hỏi;
+- một điều người kinh doanh thường chỉ nhìn thấy;
+- một điều họ dễ bỏ sót;
+- một sai lầm quen thuộc;
+- một ý khiến người xem muốn biết phần tiếp theo.
+
+Nếu một cụm chữ có thể đặt lên rất nhiều video khác mà vẫn hợp, nó đang quá chung và chưa đủ tốt để làm Cover Text.
+
+Không ưu tiên các cụm giống tên chương hoặc tên chủ đề nếu chúng chưa tạo được lực dừng mắt, ví dụ:
+
+- “Hiểu cuộc chơi”
+- “Quản lý dòng tiền”
+- “Hiểu về thuế”
+
+Hãy tìm một cách đóng gói cụ thể và có lực hơn từ chính nội dung video.
+
+Ví dụ:
+
+Không ưu tiên:
+
+> Hiểu cuộc chơi
+
+Nếu đúng với nội dung video, tốt hơn có thể là:
+
+> Đừng chỉ nhìn doanh thu
 
 Yêu cầu:
 
@@ -242,13 +287,14 @@ Yêu cầu:
 - đúng nội dung video;
 - có khả năng tạo tò mò;
 - không giật tít sai bản chất;
-- không nhồi từ khóa.
+- không nhồi từ khóa;
+- không tạo cảm giác câu view rẻ tiền.
 
 Ưu tiên:
 
-**ngắn → dễ đọc → gây tò mò → đúng nội dung.**
+**cụ thể → dễ đọc → có lực dừng mắt → đúng nội dung.**
 
-Cover Text này sẽ được dùng nguyên văn ở bước tạo ảnh bìa sau khi user duyệt nội dung.
+Cover Text này sẽ được dùng **nguyên văn** ở bước tạo ảnh bìa sau khi user duyệt nội dung.
 
 ## 7. Một vòng tự biên tập
 
