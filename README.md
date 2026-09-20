@@ -5,12 +5,12 @@ Công cụ tạo prompt để viết nội dung đăng short video cho **Kế To
 ## Cấu trúc
 
 - `SKILL.md`: nguồn chuẩn duy nhất của skill.
-- `index.html`: giao diện dán kịch bản → tạo prompt → copy prompt.
+- `index.html`: giao diện dán kịch bản / transcript / subtitle / production script → tạo prompt → copy prompt.
 
 ## Cách dùng
 
 1. Mở `index.html` bằng trình duyệt hoặc host repo bằng GitHub Pages.
-2. Dán nguyên kịch bản video vào ô **Kịch bản video**.
+2. Dán nguyên nguồn nội dung video vào ô **Nguồn nội dung video**. Có thể là kịch bản, transcript, subtitle hoặc production script.
 3. Bấm **Tạo prompt**.
 4. Bấm **Copy prompt**.
 5. Dán nguyên prompt vào AI.
@@ -23,8 +23,8 @@ Công cụ tạo prompt để viết nội dung đăng short video cho **Kế To
 - Không cần API key.
 - Không lưu kịch bản vào backend.
 - Không tự đăng bài.
-- HTML chỉ làm nhiệm vụ ghép `SKILL.md` + kịch bản thành prompt hoàn chỉnh.
+- HTML chỉ làm nhiệm vụ ghép `SKILL.md` + nguồn nội dung video thành prompt hoàn chỉnh.
 
 ## Workflow
 
-`Kịch bản → Prompt Builder → AI → Duyệt → Google Sheet → Publishing Agent`
+`Nguồn video → Prompt Builder → AI → Duyệt → Google Sheet → Publishing Agent`
