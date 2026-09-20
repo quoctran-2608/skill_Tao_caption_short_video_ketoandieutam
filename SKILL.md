@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SHORT VIDEO WORKFLOW
 
-Skill cũ đã được tách thành 2 bước để mỗi prompt tập trung đúng một nhiệm vụ.
+Workflow được tách thành 3 skill nhưng dùng chung trên một giao diện `index.html`.
 
 ## Bước 1 — Tạo nội dung
 
@@ -10,13 +10,42 @@ Dùng:
 
 Nhiệm vụ:
 
-**Nguồn video → nội dung TikTok / Facebook Reels / YouTube Shorts / Zalo OA → writing block DRAFT**
+**Nguồn video → nội dung TikTok / Facebook Reels / YouTube Shorts / Zalo OA + Cover Text → writing block DRAFT**
 
 Giao diện:
 
-`index.html` — phần Bước 1
+`index.html` — Bước 1
 
-## Bước 2 — Ghi Google Sheet
+## Kết quả đã duyệt
+
+Sau khi ChatGPT trả writing block:
+
+- user kiểm tra;
+- user chốt;
+- copy nguyên writing block;
+- dán một lần vào ô **Kết quả đã duyệt từ ChatGPT**.
+
+Dữ liệu này được dùng chung cho Bước 2 và Bước 3.
+
+## Bước 2 — Tạo ảnh bìa
+
+Dùng:
+
+`COVER_SKILL.md`
+
+Nhiệm vụ:
+
+**Writing block đã duyệt + một frame chụp từ video → một ảnh bìa dọc 9:16**
+
+Giao diện:
+
+`index.html` — Bước 2
+
+User copy prompt cover sang ChatGPT và đính kèm một frame thật từ video.
+
+Cover Skill dùng đúng Cover Text đã duyệt và không tự tạo bối cảnh thay thế nếu chưa có frame.
+
+## Bước 3 — Ghi Google Sheet
 
 Dùng:
 
@@ -28,10 +57,18 @@ Nhiệm vụ:
 
 Giao diện:
 
-`index.html` — phần Bước 2
+`index.html` — Bước 3
+
+Có thể bổ sung:
+
+- `Video_File_ID`
+- `Thumbnail_File_ID`
+- `Schedule_At`
+
+nếu đã có.
 
 ## Workflow
 
-**Nguồn video → index.html/Bước 1 → ChatGPT → writing block → user duyệt → index.html/Bước 2 → ChatGPT → Google Sheet**
+**Nguồn video → index.html/Bước 1 → ChatGPT → writing block → user duyệt → dán một lần vào kết quả đã duyệt → Bước 2 tạo cover → Bước 3 ghi Sheet**
 
 Không dùng file này làm skill thực thi. Hãy dùng đúng skill của từng bước ở trên.
