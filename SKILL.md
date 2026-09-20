@@ -334,6 +334,8 @@ Nếu đầu vào không có Video_ID:
 - nếu tên file hoặc metadata ghi rõ một Video_ID theo convention hiện hành thì có thể dùng;
 - nếu vẫn không xác định được, dùng `CHƯA_GÁN` trong bản DRAFT.
 
+Nếu Ngày không có trong nguồn và không thể xác định chắc chắn, không tự đoán; dùng `CHƯA_GÁN` trong bản DRAFT.
+
 Nếu series đang dùng:
 
 `KTD_V01`
@@ -482,6 +484,8 @@ Giữ:
 `DRAFT`
 
 ## 12. Khi user chốt
+
+Nếu `Video_ID = CHƯA_GÁN`, không ghi Google Sheet. Giữ trạng thái DRAFT và báo ngắn trong QA rằng cần gán Video_ID trước khi duyệt vào hệ thống.
 
 Các chỉ dẫn như:
 
