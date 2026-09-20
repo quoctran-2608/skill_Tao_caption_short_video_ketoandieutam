@@ -39,9 +39,21 @@ Nếu có trường:
 
 `Text: ...`
 
-thì dùng **đúng Cover Text đó**.
+thì dùng **nguyên văn Cover Text đó**.
 
-Không tự đổi hook, viết lại tiêu đề hoặc tạo một câu khác chỉ vì thấy hay hơn.
+Cover Text đã duyệt là dữ liệu khóa.
+
+Không được:
+
+- đổi từ;
+- rút gọn;
+- viết lại;
+- thêm từ;
+- đổi dấu câu;
+- tạo hook mới;
+- thay bằng title hoặc caption khác;
+
+chỉ vì thấy một cách khác “hay hơn” hoặc “hợp thiết kế hơn”.
 
 Nếu Cover Text thực sự bị thiếu, mới được tạo một hook rất ngắn từ nội dung đã duyệt:
 
@@ -108,9 +120,11 @@ Tránh:
 
 Cover Text là phần quan trọng nhất sau hình ảnh.
 
+Nhiệm vụ của COVER SKILL là **làm cho hook đã duyệt nổi bật về mặt hình ảnh**, không đánh giá lại chất lượng copy và không sáng tạo lại hook.
+
 Yêu cầu:
 
-- dùng đúng nội dung đã duyệt;
+- dùng nguyên văn Cover Text đã duyệt;
 - viết đúng chính tả và dấu tiếng Việt;
 - chữ lớn;
 - dễ đọc trên màn hình điện thoại;
