@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KTD — Tạo Prompt Caption Short Video</title>
+  <title>KTD — Bước 1 Tạo Nội Dung Short Video</title>
   <meta name="description" content="Ghép kịch bản video với skill Kế Toán Diệu Tâm để tạo prompt hoàn chỉnh." />
   <style>
     :root {
@@ -144,10 +144,10 @@
 <body>
   <main>
     <section class="header">
-      <h1>Tạo Prompt Caption Short Video</h1>
+      <h1>Bước 1 — Tạo nội dung đa kênh</h1>
       <p class="subtitle">
         Dán kịch bản, transcript hoặc nội dung nguồn của video → bấm tạo prompt → copy toàn bộ prompt sang AI.
-        Skill luôn được lấy từ <code>SKILL.md</code> trong repo để tránh lệch phiên bản.
+        Skill luôn được lấy từ <code>CONTENT_SKILL.md</code> trong repo để tránh lệch phiên bản.
       </p>
     </section>
 
@@ -160,7 +160,7 @@
           <button id="generateBtn" class="primary" disabled>Tạo prompt</button>
           <button id="clearBtn" class="secondary">Xóa</button>
         </div>
-        <div id="skillStatus" class="status">Đang tải SKILL.md...</div>
+        <div id="skillStatus" class="status">Đang tải CONTENT_SKILL.md...</div>
       </section>
 
       <section class="card">
@@ -180,12 +180,12 @@
 
     <footer>
       Công cụ này không gọi API AI và không gửi kịch bản lên máy chủ riêng.
-      Nó chỉ tải skill từ GitHub rồi ghép nội dung ngay trong trình duyệt.
+      Nó chỉ tải skill từ GitHub rồi ghép nội dung ngay trong trình duyệt.<br><a href="./publish.html">Sang Bước 2 — Ghi nội dung đã duyệt vào Sheet</a>.
     </footer>
   </main>
 
   <script>
-    const RAW_SKILL_URL = "https://raw.githubusercontent.com/quoctran-2608/skill_Tao_caption_short_video_ketoandieutam/main/SKILL.md";
+    const RAW_SKILL_URL = "https://raw.githubusercontent.com/quoctran-2608/skill_Tao_caption_short_video_ketoandieutam/main/CONTENT_SKILL.md";
 
     const scriptInput = document.getElementById("scriptInput");
     const promptOutput = document.getElementById("promptOutput");
@@ -210,18 +210,18 @@
     }
 
     async function loadSkill() {
-      const urls = ["./SKILL.md", RAW_SKILL_URL];
+      const urls = ["./CONTENT_SKILL.md", RAW_SKILL_URL];
 
       for (const url of urls) {
         try {
           const response = await fetch(url, { cache: "no-store" });
           if (!response.ok) throw new Error("HTTP " + response.status);
           const text = (await response.text()).trim();
-          if (!text) throw new Error("SKILL.md rỗng");
+          if (!text) throw new Error("CONTENT_SKILL.md rỗng");
 
           skillText = text;
           generateBtn.disabled = false;
-          setSkillStatus("Đã tải SKILL.md thành công.", "ok");
+          setSkillStatus("Đã tải CONTENT_SKILL.md thành công.", "ok");
           return;
         } catch (error) {
           // Thử nguồn kế tiếp.
@@ -230,13 +230,13 @@
 
       generateBtn.disabled = true;
       setSkillStatus(
-        "Không tải được SKILL.md. Kiểm tra kết nối Internet hoặc mở trang qua GitHub Pages/local server.",
+        "Không tải được CONTENT_SKILL.md. Kiểm tra kết nối Internet hoặc mở trang qua GitHub Pages/local server.",
         "error"
       );
     }
 
     function buildPrompt(script) {
-      return `Bạn hãy thực hiện nhiệm vụ theo SKILL bên dưới.
+      return `Bạn hãy thực hiện nhiệm vụ theo CONTENT SKILL bên dưới.
 
 QUY TẮC ƯU TIÊN:
 - SKILL là chỉ dẫn làm việc.
@@ -244,15 +244,15 @@ QUY TẮC ƯU TIÊN:
 - Chỉ trả kết quả theo format trong SKILL.
 - Chưa ghi Google Sheet trừ khi người dùng nói rõ là chốt/duyệt/ghi vào sheet.
 
-<SKILL>
+<CONTENT_SKILL>
 ${skillText}
-</SKILL>
+</CONTENT_SKILL>
 
 <NGUON_VIDEO>
 ${script}
 </NGUON_VIDEO>
 
-Hãy tự chuẩn hóa nguồn video rồi xử lý theo đúng SKILL.`;
+Hãy tự chuẩn hóa nguồn video rồi xử lý theo đúng CONTENT SKILL và trả toàn bộ kết quả trong một writing block.`;
     }
 
     generateBtn.addEventListener("click", () => {
@@ -272,7 +272,7 @@ Hãy tự chuẩn hóa nguồn video rồi xử lý theo đúng SKILL.`;
       }
 
       if (!skillText) {
-        copyStatus.textContent = "SKILL.md chưa được tải.";
+        copyStatus.textContent = "CONTENT_SKILL.md chưa được tải.";
         copyStatus.className = "status error";
         return;
       }
