@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KTD — Tạo Prompt Ghi Sheet</title>
+  <meta name="description" content="Ghép writing block đã duyệt với publish skill để tạo prompt ghi Google Sheet." />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #fff;
+      --text: #172033;
+      --muted: #667085;
+      --line: #d9dee8;
+      --accent: #1f5eff;
+      --accent-dark: #1749c9;
+      --success: #18794e;
+      --danger: #b42318;
+      --shadow: 0 12px 32px rgba(16,24,40,.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    main { width: min(1080px, calc(100% - 32px)); margin: 40px auto; }
+    h1 { margin: 0 0 8px; font-size: clamp(28px,4vw,42px); line-height: 1.1; }
+    .subtitle { margin: 0 0 22px; color: var(--muted); line-height: 1.6; }
+    .grid { display: grid; gap: 18px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .card h2 { margin: 0 0 8px; font-size: 18px; }
+    .hint { margin: 0 0 12px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    textarea {
+      width: 100%;
+      min-height: 300px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      font: 15px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: var(--text);
+      background: #fbfcfe;
+      outline: none;
+    }
+    #promptOutput { min-height: 360px; }
+    textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(31,94,255,.12); }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    button {
+      border: 0;
+      border-radius: 10px;
+      padding: 11px 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:disabled { cursor: not-allowed; opacity: .55; }
+    .primary { background: var(--accent); color: white; }
+    .primary:hover:not(:disabled) { background: var(--accent-dark); }
+    .secondary { background: #eef2f8; color: var(--text); }
+    .status { margin-top: 10px; min-height: 20px; font-size: 13px; color: var(--muted); }
+    .status.ok { color: var(--success); }
+    .status.error { color: var(--danger); }
+    .meta { display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:10px; color:var(--muted); font-size:13px; }
+    code { background:#eef2f8; padding:2px 6px; border-radius:6px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bước 2 — Ghi nội dung vào Sheet</h1>
+    <p class="subtitle">
+      Copy nguyên writing block đã duyệt từ ChatGPT → dán vào đây → tạo prompt → copy prompt sang ChatGPT có quyền truy cập Google Sheet.
+    </p>
+
+    <div class="grid">
+      <section class="card">
+        <h2>1. Writing block đã duyệt</h2>
+        <p class="hint">
+          Dán nguyên nội dung. Nếu có Video_File_ID, Thumbnail_File_ID hoặc Schedule_At, có thể thêm ngay bên dưới.
+        </p>
+        <textarea id="approvedInput" placeholder="Dán writing block đã duyệt vào đây..."></textarea>
+        <div class="actions">
+          <button id="generateBtn" class="primary" disabled>Tạo prompt ghi Sheet</button>
+          <button id="clearBtn" class="secondary">Xóa</button>
+        </div>
+        <div id="skillStatus" class="status">Đang tải PUBLISH_SKILL.md...</div>
+      </section>
+
+      <section class="card">
+        <h2>2. Prompt hoàn chỉnh</h2>
+        <p class="hint">Copy nguyên prompt này sang ChatGPT để ghi dữ liệu vào Sheet.</p>
+        <textarea id="promptOutput" readonly placeholder="Prompt sẽ xuất hiện ở đây..."></textarea>
+        <div class="actions">
+          <button id="copyBtn" class="primary" disabled>Copy prompt</button>
+          <a href="./index.html"><button type="button" class="secondary">Quay lại bước 1</button></a>
+        </div>
+        <div class="meta">
+          <span id="inputCount">Đầu vào: 0 ký tự</span>
+          <span id="promptCount">Prompt: 0 ký tự</span>
+        </div>
+        <div id="copyStatus" class="status"></div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const RAW_SKILL_URL = "https://raw.githubusercontent.com/quoctran-2608/skill_Tao_caption_short_video_ketoandieutam/main/PUBLISH_SKILL.md";
+
+    const approvedInput = document.getElementById("approvedInput");
+    const promptOutput = document.getElementById("promptOutput");
+    const generateBtn = document.getElementById("generateBtn");
+    const copyBtn = document.getElementById("copyBtn");
+    const clearBtn = document.getElementById("clearBtn");
+    const skillStatus = document.getElementById("skillStatus");
+    const copyStatus = document.getElementById("copyStatus");
+    const inputCount = document.getElementById("inputCount");
+    const promptCount = document.getElementById("promptCount");
+
+    let skillText = "";
+
+    function setSkillStatus(message, type = "") {
+      skillStatus.textContent = message;
+      skillStatus.className = "status" + (type ? " " + type : "");
+    }
+
+    function updateCounts() {
+      inputCount.textContent = "Đầu vào: " + approvedInput.value.length.toLocaleString("vi-VN") + " ký tự";
+      promptCount.textContent = "Prompt: " + promptOutput.value.length.toLocaleString("vi-VN") + " ký tự";
+    }
+
+    async function loadSkill() {
+      for (const url of ["./PUBLISH_SKILL.md", RAW_SKILL_URL]) {
+        try {
+          const response = await fetch(url, { cache: "no-store" });
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          const text = (await response.text()).trim();
+          if (!text) throw new Error("PUBLISH_SKILL.md rỗng");
+          skillText = text;
+          generateBtn.disabled = false;
+          setSkillStatus("Đã tải PUBLISH_SKILL.md thành công.", "ok");
+          return;
+        } catch (error) {}
+      }
+
+      generateBtn.disabled = true;
+      setSkillStatus("Không tải được PUBLISH_SKILL.md. Kiểm tra kết nối Internet hoặc mở qua GitHub Pages/local server.", "error");
+    }
+
+    function buildPrompt(input) {
+      return `Bạn hãy thực hiện nhiệm vụ theo PUBLISH SKILL bên dưới.
+
+Đây là nội dung đã được user duyệt ở bước trước.
+- Giữ nguyên nội dung đã duyệt.
+- Không viết lại caption/title/description chỉ để tối ưu thêm.
+- Hãy dùng công cụ Google Sheet nếu có quyền truy cập và thực hiện ghi dữ liệu ngay.
+- Nếu thiếu Video_ID thì không ghi Sheet và báo ngắn phần còn thiếu.
+
+<PUBLISH_SKILL>
+${skillText}
+</PUBLISH_SKILL>
+
+<NOI_DUNG_DA_DUYET>
+${input}
+</NOI_DUNG_DA_DUYET>
+
+Hãy xử lý và ghi vào Google Sheet theo đúng PUBLISH_SKILL.`;
+    }
+
+    generateBtn.addEventListener("click", () => {
+      const input = approvedInput.value.trim();
+      copyStatus.textContent = "";
+      copyStatus.className = "status";
+
+      if (!input) {
+        promptOutput.value = "";
+        copyBtn.disabled = true;
+        copyStatus.textContent = "Hãy dán writing block đã duyệt trước.";
+        copyStatus.className = "status error";
+        updateCounts();
+        approvedInput.focus();
+        return;
+      }
+
+      if (!skillText) {
+        copyStatus.textContent = "PUBLISH_SKILL.md chưa được tải.";
+        copyStatus.className = "status error";
+        return;
+      }
+
+      promptOutput.value = buildPrompt(input);
+      copyBtn.disabled = false;
+      updateCounts();
+    });
+
+    copyBtn.addEventListener("click", async () => {
+      if (!promptOutput.value) return;
+      try {
+        await navigator.clipboard.writeText(promptOutput.value);
+        copyStatus.textContent = "Đã copy prompt.";
+        copyStatus.className = "status ok";
+      } catch (error) {
+        promptOutput.focus();
+        promptOutput.select();
+        const ok = document.execCommand("copy");
+        copyStatus.textContent = ok ? "Đã copy prompt." : "Không copy tự động được. Hãy Ctrl/Cmd + C.";
+        copyStatus.className = ok ? "status ok" : "status error";
+      }
+    });
+
+    clearBtn.addEventListener("click", () => {
+      approvedInput.value = "";
+      promptOutput.value = "";
+      copyBtn.disabled = true;
+      copyStatus.textContent = "";
+      copyStatus.className = "status";
+      updateCounts();
+      approvedInput.focus();
+    });
+
+    approvedInput.addEventListener("input", updateCounts);
+
+    updateCounts();
+    loadSkill();
+  </script>
+</body>
+</html>
