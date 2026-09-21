@@ -291,6 +291,15 @@ Tạo:
 
 **Cover Text**
 
+Nếu input có `COVER_TEXT_USER` và giá trị không trống:
+
+- dùng **nguyên văn** Cover Text user đã nhập;
+- không tự viết lại, rút gọn, đổi từ hoặc tối ưu lại;
+- vẫn đưa đúng giá trị đó vào khối Dữ liệu workflow;
+- nếu Cover Text mâu thuẫn rõ ràng với nội dung video hoặc có vấn đề đáng kể, giữ nguyên text nhưng nêu cảnh báo ngắn ở QA.
+
+Nếu `COVER_TEXT_USER` trống hoặc không có, tự tạo Cover Text theo các nguyên tắc bên dưới.
+
 Cover Text là dòng chữ chính xuất hiện trực tiếp trên ảnh bìa.
 
 Mục tiêu của Cover Text là giúp người đang lướt:
