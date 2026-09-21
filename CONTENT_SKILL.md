@@ -375,42 +375,44 @@ Không tự đổi thành `KTD_D01`, `KTD_N01` hoặc biến thể khác.
 
 ## 10. Format trả kết quả
 
-Trả kết quả thành **5 writing block riêng biệt**.
+Trả kết quả theo hai lớp:
 
-Mục tiêu:
+1. **4 khối copy riêng** cho TikTok, Facebook Reels, YouTube Shorts và Zalo OA;
+2. **1 writing block Dữ liệu workflow** để chuyển sang Bước 2 Cover và Bước 3 Publish.
 
-- 4 block đầu để user copy nhanh nội dung đăng từng nền tảng;
-- 1 block cuối là **Dữ liệu workflow** để user copy một lần sang Bước 2 Cover và Bước 3 Publish.
+Bốn khối copy phải tách riêng từng nền tảng để user có thể copy nhanh.
 
-Không gộp 4 nền tảng vào một writing block.
+### Khối copy 1 — TikTok
 
-### Writing block 1 — TikTok
+Chỉ chứa đúng nội dung cần dán vào ô caption TikTok.
 
-Chỉ chứa nội dung có thể copy để đăng TikTok.
-
-Cấu trúc:
-
-**Caption:**
-
-[nội dung caption]
-
-[hashtag nằm ngay cuối caption, không có nhãn Hashtag riêng]
-
-Không thêm Title nếu TikTok không cần.
-
-### Writing block 2 — Facebook Reels
-
-Chỉ chứa nội dung có thể copy để đăng Facebook Reels.
+Không thêm nhãn `Caption:`.
 
 Cấu trúc:
 
-**Caption:**
+[caption]
 
-[nội dung caption]
+[hashtag nằm ngay cuối caption sau một dòng trống]
 
-[hashtag nằm ngay cuối caption, không có nhãn Hashtag riêng]
+Không tạo mục Hashtag riêng.
 
-### Writing block 3 — YouTube Shorts
+### Khối copy 2 — Facebook Reels
+
+Chỉ chứa đúng nội dung cần dán vào phần mô tả/caption Facebook Reels.
+
+Không thêm nhãn `Caption:`.
+
+Cấu trúc:
+
+[caption]
+
+[hashtag nằm ngay cuối caption sau một dòng trống]
+
+Không tạo mục Hashtag riêng.
+
+### Khối copy 3 — YouTube Shorts
+
+YouTube có Title và Description là hai trường khác nhau, vì vậy giữ nhãn để user phân biệt.
 
 Cấu trúc:
 
@@ -425,9 +427,13 @@ Cấu trúc:
 Kế Toán Diệu Tâm — Minh bạch tài chính, vững nền tương lai.  
 Hotline/Zalo: 0777 315 188
 
-[hashtag nằm ngay cuối description, không có nhãn Hashtag riêng]
+[hashtag nằm ngay cuối description sau một dòng trống]
 
-### Writing block 4 — Zalo OA
+Không tạo mục Hashtag riêng.
+
+### Khối copy 4 — Zalo OA
+
+Zalo có Title và Trích dẫn là hai trường khác nhau, vì vậy giữ nhãn để user phân biệt.
 
 Cấu trúc:
 
@@ -445,7 +451,7 @@ Không hashtag.
 
 Block này không phải nội dung để đăng trực tiếp.
 
-Nó là gói dữ liệu chuẩn để chuyển sang Bước 2 và Bước 3.
+Đây là gói dữ liệu chuẩn để user copy **một lần** sang Bước 2 và Bước 3.
 
 Cấu trúc:
 
@@ -499,13 +505,13 @@ Cấu trúc:
 
 **DRAFT**
 
-Trong 4 writing block đăng trực tiếp, hashtag phải được gắn tự nhiên ngay cuối caption/description.
+Trong 4 khối đăng trực tiếp, hashtag phải gắn tự nhiên ngay cuối caption/description.
 
-Trong block **Dữ liệu workflow**, vẫn tách `Caption/Description` và `Hashtags` thành trường riêng để PUBLISH SKILL ghi đúng cột Google Sheet.
+Trong **Dữ liệu workflow**, Caption/Description và Hashtags vẫn tách thành field riêng để PUBLISH SKILL ghi đúng cột Google Sheet.
 
 Không ghi Google Sheet trong SKILL này.
 
-Không tự thêm lời mời làm tiếp sau writing block cuối cùng.
+Không tự thêm lời mời làm tiếp sau Dữ liệu workflow.
 
 ## 11. Nguyên tắc cuối
 
