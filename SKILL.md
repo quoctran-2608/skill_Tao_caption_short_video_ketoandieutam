@@ -16,6 +16,13 @@ Kết quả:
 
 Bốn khối đầu dùng để copy/paste trực tiếp. **Bản tổng hợp** là khối dùng cho các bước sau.
 
+CONTENT SKILL dùng một **Content Core duy nhất** làm nguồn nghĩa cho cả bốn nền tảng:
+
+- Chủ thể cốt lõi: video thực sự nói về cái gì;
+- Thông điệp cốt lõi: video muốn người xem hiểu gì về chủ thể đó.
+
+Không tạo bốn bản tóm tắt độc lập. TikTok/Facebook phải tự làm rõ chủ thể trong caption; YouTube và Zalo được đánh giá theo cụm Title + phần mô tả.
+
 ## Bước 2 — Cover
 
 Dùng `COVER_SKILL.md`.
