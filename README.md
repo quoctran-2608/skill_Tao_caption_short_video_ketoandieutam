@@ -17,14 +17,14 @@ Người dùng thao tác trên **một trang duy nhất**, còn logic được t
 
 1. Dán nguồn video vào `index.html`.
 2. Tạo prompt và copy sang ChatGPT.
-3. ChatGPT trả **5 writing block**:
+3. ChatGPT trả **4 khối copy riêng + 1 writing block Dữ liệu workflow**:
    - TikTok
    - Facebook Reels
    - YouTube Shorts
    - Zalo OA
    - Dữ liệu workflow
 4. Bốn khối nền tảng được tối ưu để copy/paste nhanh. Hashtag nằm ngay cuối caption/description, không tách thành một mục riêng.
-5. Block **Dữ liệu workflow** giữ các field có cấu trúc để dùng cho Cover và Publish.
+5. Writing block **Dữ liệu workflow** giữ các field có cấu trúc để dùng cho Cover và Publish.
 
 ## Độ dài và hình thức
 
@@ -42,7 +42,7 @@ Sau khi duyệt Bước 1:
 1. Copy **chỉ writing block Dữ liệu workflow**.
 2. Dán một lần vào ô **Kết quả đã duyệt từ ChatGPT** trong `index.html`.
 
-Bước 2 và Bước 3 cùng dùng lại block này. Không cần dán lại kịch bản hoặc 4 block nền tảng.
+Bước 2 và Bước 3 cùng dùng lại block này. Không cần dán lại kịch bản hoặc 4 khối nền tảng.
 
 ## Bước 2 — Tạo ảnh bìa
 
@@ -60,4 +60,4 @@ Bước 2 và Bước 3 cùng dùng lại block này. Không cần dán lại k�
 
 ## Workflow
 
-`Nguồn video → 4 block đăng trực tiếp + Dữ liệu workflow → Cover → Publish → Google Sheet`
+`Nguồn video → 4 khối copy đăng trực tiếp + Dữ liệu workflow → Cover → Publish → Google Sheet`
