@@ -1,63 +1,44 @@
 # KẾ TOÁN DIỆU TÂM — SHORT VIDEO WORKFLOW
 
-Workflow được tách thành 3 skill nhưng dùng chung trên một giao diện `index.html`.
+Workflow được tách thành 3 skill nhưng dùng chung trên `index.html`.
 
-## Bước 1 — Tạo nội dung
+## Bước 1 — Content
 
-Dùng:
+Dùng `CONTENT_SKILL.md`.
 
-`CONTENT_SKILL.md`
+Kết quả gồm **5 writing block riêng**:
 
-Nhiệm vụ:
+1. TikTok
+2. Facebook Reels
+3. YouTube Shorts
+4. Zalo OA
+5. Dữ liệu workflow
 
-**Nguồn video → nội dung TikTok / Facebook Reels / YouTube Shorts / Zalo OA + Cover Text → writing block DRAFT**
+Bốn block đầu phục vụ copy/paste trực tiếp lên nền tảng. Hashtag nằm ngay cuối caption/description.
 
-Giao diện:
+Block **Dữ liệu workflow** giữ field có cấu trúc và là block duy nhất cần copy sang bước tiếp theo.
 
-`index.html` — Bước 1
+## Bước 2 — Cover
 
-## Kết quả đã duyệt
+Dùng `COVER_SKILL.md`.
 
-Sau khi ChatGPT trả writing block:
+Đầu vào:
 
-- user kiểm tra;
-- user chốt;
-- copy nguyên writing block;
-- dán một lần vào ô **Kết quả đã duyệt từ ChatGPT**.
+**Dữ liệu workflow đã duyệt + một frame chụp từ video**
 
-Dữ liệu này được dùng chung cho Bước 2 và Bước 3.
+Kết quả:
 
-## Bước 2 — Tạo ảnh bìa
+**một ảnh bìa dọc 9:16**
 
-Dùng:
+Cover Skill dùng nguyên văn Cover Text đã duyệt.
 
-`COVER_SKILL.md`
+## Bước 3 — Publish
 
-Nhiệm vụ:
+Dùng `PUBLISH_SKILL.md`.
 
-**Writing block đã duyệt + một frame chụp từ video → một ảnh bìa dọc 9:16**
+Đầu vào:
 
-Giao diện:
-
-`index.html` — Bước 2
-
-User copy prompt cover sang ChatGPT và đính kèm một frame thật từ video.
-
-Cover Skill dùng đúng Cover Text đã duyệt và không tự tạo bối cảnh thay thế nếu chưa có frame.
-
-## Bước 3 — Ghi Google Sheet
-
-Dùng:
-
-`PUBLISH_SKILL.md`
-
-Nhiệm vụ:
-
-**Writing block đã duyệt → giữ nguyên nội dung → upsert VIDEO_MASTER + PUBLISH_QUEUE**
-
-Giao diện:
-
-`index.html` — Bước 3
+**Dữ liệu workflow đã duyệt**
 
 Có thể bổ sung:
 
@@ -65,10 +46,10 @@ Có thể bổ sung:
 - `Thumbnail_File_ID`
 - `Schedule_At`
 
-nếu đã có.
+PUBLISH SKILL giữ nguyên nội dung, tách Caption và Hashtags theo field trong Dữ liệu workflow rồi upsert `VIDEO_MASTER` + `PUBLISH_QUEUE`.
 
 ## Workflow
 
-**Nguồn video → index.html/Bước 1 → ChatGPT → writing block → user duyệt → dán một lần vào kết quả đã duyệt → Bước 2 tạo cover → Bước 3 ghi Sheet**
+**Nguồn video → 4 block đăng trực tiếp + Dữ liệu workflow → Cover → Publish → Google Sheet**
 
-Không dùng file này làm skill thực thi. Hãy dùng đúng skill của từng bước ở trên.
+Không dùng file này làm skill thực thi.
