@@ -291,15 +291,6 @@ Tạo:
 
 **Cover Text**
 
-Nếu input có `COVER_TEXT_USER` và giá trị không trống:
-
-- dùng **nguyên văn** Cover Text user đã nhập;
-- không tự viết lại, rút gọn, đổi từ hoặc tối ưu lại;
-- vẫn đưa đúng giá trị đó vào khối Dữ liệu workflow;
-- nếu Cover Text mâu thuẫn rõ ràng với nội dung video hoặc có vấn đề đáng kể, giữ nguyên text nhưng nêu cảnh báo ngắn ở QA.
-
-Nếu `COVER_TEXT_USER` trống hoặc không có, tự tạo Cover Text theo các nguyên tắc bên dưới.
-
 Cover Text là dòng chữ chính xuất hiện trực tiếp trên ảnh bìa.
 
 Mục tiêu của Cover Text là giúp người đang lướt:
@@ -408,7 +399,7 @@ Không tự đổi thành `KTD_D01`, `KTD_N01` hoặc biến thể khác.
 Trả kết quả theo hai lớp:
 
 1. **4 khối copy riêng** cho TikTok, Facebook Reels, YouTube Shorts và Zalo OA;
-2. **1 writing block Dữ liệu workflow** để chuyển sang Bước 2 Cover và Bước 3 Publish.
+2. **1 writing block Bản tổng hợp** để chuyển sang Bước 2 Cover và Bước 3 Publish.
 
 Bốn khối copy phải tách riêng từng nền tảng để user có thể copy nhanh.
 
@@ -477,7 +468,7 @@ Cấu trúc:
 
 Không hashtag.
 
-### Writing block 5 — Dữ liệu workflow
+### Writing block 5 — Bản tổng hợp
 
 Block này không phải nội dung để đăng trực tiếp.
 
@@ -537,11 +528,11 @@ Cấu trúc:
 
 Trong 4 khối đăng trực tiếp, hashtag phải gắn tự nhiên ngay cuối caption/description.
 
-Trong **Dữ liệu workflow**, Caption/Description và Hashtags vẫn tách thành field riêng để PUBLISH SKILL ghi đúng cột Google Sheet.
+Trong **Bản tổng hợp**, Caption/Description và Hashtags vẫn tách thành field riêng để PUBLISH SKILL ghi đúng cột Google Sheet.
 
 Không ghi Google Sheet trong SKILL này.
 
-Không tự thêm lời mời làm tiếp sau Dữ liệu workflow.
+Không tự thêm lời mời làm tiếp sau Bản tổng hợp.
 
 ## 11. Nguyên tắc cuối
 
