@@ -154,27 +154,62 @@ Không sáng tạo thêm chỉ để tạo sự khác biệt.
 
 ## 6. Yêu cầu theo nền tảng
 
+### Quy tắc trình bày chung
+
+Độ dài bên dưới là **vùng khuyến nghị**, không phải quota phải lấp đầy.
+
+Viết đủ ý rồi dừng. Không kéo dài caption chỉ để đạt số câu hoặc số ký tự.
+
+Emoji:
+
+- mặc định không dùng;
+- chỉ dùng 0–1 emoji khi nó thực sự giúp tạo điểm nhấn hoặc phù hợp tự nhiên với nội dung;
+- không dùng chuỗi emoji trang trí;
+- không dùng emoji làm nội dung chuyên môn trông giật gân hoặc kém tin cậy.
+
+Hashtag của TikTok, Facebook và YouTube phải nằm **ngay cuối nội dung đăng**, sau một dòng trống.
+
+Trong writing block dùng để đăng trực tiếp:
+
+- không tạo mục `Hashtag:` riêng;
+- không bắt user copy caption và hashtag hai lần;
+- caption/description + hashtag phải là một cụm có thể copy liền.
+
 ### TikTok
 
-**Caption:** khoảng 2–4 câu ngắn.
+**Caption:** ưu tiên 1–3 câu ngắn.
+
+Phần caption chính thường khoảng **100–250 ký tự**, không tính hashtag.
 
 Ưu tiên:
 
 - vào thẳng vấn đề;
 - đọc nhanh;
-- có nhịp.
+- có nhịp;
+- không tóm tắt toàn bộ video.
 
-**Hashtag:** 3–6 hashtag.
+**Hashtag:** 3–5 hashtag thật sự liên quan.
+
+Đặt hashtag ở cuối caption, sau một dòng trống.
 
 CTA không bắt buộc. Nếu có, chỉ một hành động.
 
 ### Facebook Reels
 
-**Caption:** khoảng 2–4 đoạn ngắn.
+**Caption:** ưu tiên 1–3 câu ngắn.
 
-Có thể nhiều ngữ cảnh hoặc cảm xúc hơn TikTok một chút.
+Phần caption chính thường khoảng **100–220 ký tự**, không tính hashtag.
 
-**Hashtag:** 2–5 hashtag.
+Ưu tiên:
+
+- câu đầu đủ rõ để đứng riêng;
+- có thể xuống dòng để dễ đọc;
+- chỉ thêm câu thứ hai hoặc thứ ba khi thực sự bổ sung ngữ cảnh;
+- không biến caption Reel thành một bài viết dài.
+
+**Hashtag:** 2–4 hashtag liên quan.
+
+Đặt hashtag ở cuối caption, sau một dòng trống.
 
 CTA không bắt buộc.
 
@@ -192,7 +227,11 @@ Title phải:
 - có khả năng tìm kiếm;
 - không giật tít quá mức.
 
-**Description:** phần riêng của video ưu tiên 1–2 câu, nói rõ video đề cập điều gì, không tóm tắt toàn bộ và không liệt kê các kênh mạng xã hội.
+**Description:** phần riêng của video ưu tiên 1–2 câu.
+
+Phần mô tả động thường khoảng **100–180 ký tự**, không tính footer và hashtag.
+
+Đưa chủ đề chính vào phần đầu. Không tóm tắt toàn bộ video và không liệt kê các kênh mạng xã hội.
 
 Sau phần mô tả riêng, luôn nối footer cố định:
 
@@ -201,7 +240,9 @@ Sau phần mô tả riêng, luôn nối footer cố định:
 
 Không tự sửa, mở rộng hoặc sáng tạo lại footer.
 
-**Hashtag:** 3–5 hashtag liên quan.
+**Hashtag:** 3–5 hashtag liên quan; nếu 3 hashtag đã đủ thì không cần thêm.
+
+Đặt hashtag ở cuối description, sau footer và một dòng trống.
 
 Ưu tiên `#KeToanDieuTam` và các hashtag thật sự phù hợp với video.
 
@@ -226,12 +267,14 @@ Title:
 Trích dẫn:
 
 - tối đa 300 ký tự;
-- ưu tiên 1–3 câu;
+- ưu tiên 1–2 câu;
+- thường khoảng **120–240 ký tự**;
 - ngắn, rõ, đáng tin;
 - giúp người đọc hiểu nhanh video nói gì;
 - không cần hashtag;
 - không cần brand footer;
-- không cần CTA nếu không thực sự cần thiết.
+- không cần CTA nếu không thực sự cần thiết;
+- mặc định không dùng emoji.
 
 ### Cover
 
@@ -332,66 +375,137 @@ Không tự đổi thành `KTD_D01`, `KTD_N01` hoặc biến thể khác.
 
 ## 10. Format trả kết quả
 
-Trả **toàn bộ kết quả trong một writing block duy nhất** để user có thể copy nguyên khối sang bước tiếp theo.
+Trả kết quả thành **5 writing block riêng biệt**.
 
-Nội dung writing block:
+Mục tiêu:
+
+- 4 block đầu để user copy nhanh nội dung đăng từng nền tảng;
+- 1 block cuối là **Dữ liệu workflow** để user copy một lần sang Bước 2 Cover và Bước 3 Publish.
+
+Không gộp 4 nền tảng vào một writing block.
+
+### Writing block 1 — TikTok
+
+Chỉ chứa nội dung có thể copy để đăng TikTok.
+
+Cấu trúc:
+
+**Caption:**
+
+[nội dung caption]
+
+[hashtag nằm ngay cuối caption, không có nhãn Hashtag riêng]
+
+Không thêm Title nếu TikTok không cần.
+
+### Writing block 2 — Facebook Reels
+
+Chỉ chứa nội dung có thể copy để đăng Facebook Reels.
+
+Cấu trúc:
+
+**Caption:**
+
+[nội dung caption]
+
+[hashtag nằm ngay cuối caption, không có nhãn Hashtag riêng]
+
+### Writing block 3 — YouTube Shorts
+
+Cấu trúc:
+
+**Title:**
+
+[title]
+
+**Description:**
+
+[mô tả động]
+
+Kế Toán Diệu Tâm — Minh bạch tài chính, vững nền tương lai.  
+Hotline/Zalo: 0777 315 188
+
+[hashtag nằm ngay cuối description, không có nhãn Hashtag riêng]
+
+### Writing block 4 — Zalo OA
+
+Cấu trúc:
+
+**Title:**
+
+[title]
+
+**Trích dẫn:**
+
+[trích dẫn]
+
+Không hashtag.
+
+### Writing block 5 — Dữ liệu workflow
+
+Block này không phải nội dung để đăng trực tiếp.
+
+Nó là gói dữ liệu chuẩn để chuyển sang Bước 2 và Bước 3.
+
+Cấu trúc:
 
 ## [Video_ID / Ngày] — [Tên chủ đề ngắn]
 
 ### TikTok
 
 **Caption:**  
-...
+[caption không gồm hashtag]
 
-**Hashtag:**  
-...
+**Hashtags:**  
+[hashtag TikTok]
 
 ### Facebook Reels
 
 **Caption:**  
-...
+[caption không gồm hashtag]
 
-**Hashtag:**  
-...
+**Hashtags:**  
+[hashtag Facebook]
 
 ### YouTube Shorts
 
 **Title:**  
-...
+[title]
 
 **Description:**  
-[Mô tả riêng của video]
+[mô tả hoàn chỉnh gồm phần động + footer cố định, không gồm hashtag]
 
-Kế Toán Diệu Tâm — Minh bạch tài chính, vững nền tương lai.  
-Hotline/Zalo: 0777 315 188
-
-**Hashtag:**  
-...
+**Hashtags:**  
+[hashtag YouTube]
 
 ### Zalo OA
 
 **Title:**  
-...
+[title]
 
 **Trích dẫn:**  
-...
+[trích dẫn]
 
 ### Cover
 
 **Text:**  
-...
+[Cover Text]
 
 ### QA
 
-...
+[QA]
 
 ### Trạng thái
 
 **DRAFT**
 
+Trong 4 writing block đăng trực tiếp, hashtag phải được gắn tự nhiên ngay cuối caption/description.
+
+Trong block **Dữ liệu workflow**, vẫn tách `Caption/Description` và `Hashtags` thành trường riêng để PUBLISH SKILL ghi đúng cột Google Sheet.
+
 Không ghi Google Sheet trong SKILL này.
 
-Không tự thêm lời mời làm tiếp sau writing block.
+Không tự thêm lời mời làm tiếp sau writing block cuối cùng.
 
 ## 11. Nguyên tắc cuối
 
