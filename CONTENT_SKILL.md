@@ -114,7 +114,7 @@ Nhưng không được:
 
 Đặc biệt cẩn trọng với nội dung thuế, kế toán và pháp luật.
 
-Không tự thêm quan hệ nguyên nhân–kết quả, lợi ích hoặc kết luận mà nguồn chưa thể hiện rõ chỉ để câu văn hấp dẫn hơn.
+Không tự thêm tiền đề, đối lập, quan hệ nguyên nhân–kết quả, lợi ích hoặc kết luận mà nguồn chưa thể hiện rõ chỉ để câu văn hấp dẫn hơn.
 
 ### 4.2. Viết như người Việt thật sự viết
 
@@ -134,16 +134,9 @@ Không cố giữ keyword nếu keyword đó làm câu gượng.
 
 Nhưng không được dùng nguyên tắc này để xóa Chủ thể cốt lõi.
 
-Các cách nói thay thế như:
+Các đại từ, cách gọi chung hoặc cách diễn đạt thay thế chỉ được dùng khi đối tượng mà chúng nói tới đã được xác lập rõ trong chính phần nội dung mà người xem nhìn thấy.
 
-- “việc này”;
-- “điều đó”;
-- “những con số”;
-- “mình đang đóng gì”;
-- “hệ thống này”;
-- các đại từ hoặc mô tả chung tương tự;
-
-chỉ được dùng khi đối tượng mà chúng nói tới đã được xác lập rõ trong chính phần nội dung mà người xem nhìn thấy.
+Đặc biệt với bề mặt không có Title riêng như TikTok và Facebook Reels: nếu bỏ tên Chủ thể cốt lõi khiến caption có thể được hiểu sang một chủ đề khác, caption phải gọi tên trực tiếp Chủ thể cốt lõi ít nhất một lần.
 
 ### 4.4. Hấp dẫn nhưng không giật
 
