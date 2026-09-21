@@ -2,7 +2,7 @@
 
 ## 1. Nhiệm vụ
 
-Nhận **writing block Dữ liệu workflow đã được user duyệt** từ bước tạo content và ghi dữ liệu đó vào Google Sheet.
+Nhận **writing block Bản tổng hợp đã được user duyệt** từ bước tạo content và ghi dữ liệu đó vào Google Sheet.
 
 SKILL này không có nhiệm vụ sáng tạo caption.
 
@@ -14,7 +14,7 @@ Không viết lại để “hay hơn”, không đổi hook, không đổi titl
 
 ## 2. Đầu vào
 
-Đầu vào chuẩn là writing block **Dữ liệu workflow**, thường có cấu trúc:
+Đầu vào chuẩn là writing block **Bản tổng hợp**, thường có cấu trúc:
 
 - Video_ID / Ngày / Topic
 - TikTok Caption + Hashtags
@@ -33,7 +33,7 @@ Có thể kèm thêm:
 
 Nếu user dán cả dấu markdown của writing block, hãy tự đọc đúng các trường.
 
-Bốn writing block đăng trực tiếp chỉ phục vụ copy/paste lên nền tảng. Khi có block **Dữ liệu workflow**, ưu tiên dùng block này làm nguồn ghi Sheet.
+Bốn writing block đăng trực tiếp chỉ phục vụ copy/paste lên nền tảng. Khi có block **Bản tổng hợp**, ưu tiên dùng block này làm nguồn ghi Sheet.
 
 Không yêu cầu user chuyển sang JSON.
 
@@ -248,4 +248,4 @@ SKILL này là bước **ghi dữ liệu**, không phải bước **sáng tạo 
 
 Workflow:
 
-**Dữ liệu workflow đã duyệt → kiểm tra field → upsert VIDEO_MASTER → upsert PUBLISH_QUEUE → báo kết quả.**
+**Bản tổng hợp đã duyệt → kiểm tra field → upsert VIDEO_MASTER → upsert PUBLISH_QUEUE → báo kết quả.**
