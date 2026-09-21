@@ -4,7 +4,7 @@
 
 Từ:
 
-1. nội dung đa kênh đã được user duyệt ở Bước 1; và
+1. writing block **Dữ liệu workflow** đã được user duyệt ở Bước 1; và
 2. một ảnh chụp khung hình từ chính video do user đính kèm trong ChatGPT;
 
 tạo **một ảnh bìa dọc 9:16** dùng làm master cover cho short video.
@@ -24,14 +24,14 @@ Khi đã có ảnh frame, dùng chính ảnh đó làm nền tảng để tạo 
 
 ## 3. Hiểu nội dung
 
-Đọc phần nội dung đã duyệt để hiểu:
+Đọc writing block **Dữ liệu workflow** đã duyệt để hiểu:
 
 - chủ đề video;
 - thông điệp chính;
 - ngữ cảnh;
 - Cover Text.
 
-Không cần đọc lại kịch bản gốc nếu nội dung đã duyệt đã đủ.
+Không cần đọc lại kịch bản gốc hoặc 4 writing block đăng trực tiếp nếu Dữ liệu workflow đã đủ.
 
 Nếu có trường:
 
