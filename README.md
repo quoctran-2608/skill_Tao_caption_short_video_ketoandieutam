@@ -17,6 +17,19 @@ Bộ công cụ tạo prompt cho quy trình short video của **Kế Toán Diệ
 
 Bốn khối nền tảng đã gắn hashtag vào cuối caption/description để copy nhanh.
 
+## Content Core
+
+Bước 1 không tạo bốn bản tóm tắt độc lập.
+
+CONTENT SKILL:
+
+1. hiểu nguồn một lần;
+2. chốt một **Content Core** gồm Chủ thể cốt lõi + Thông điệp cốt lõi;
+3. tạo bốn phiên bản nền tảng từ cùng Content Core;
+4. validation từng phiên bản lại với Content Core trước khi trả kết quả.
+
+TikTok và Facebook phải tự làm rõ Chủ thể cốt lõi trong caption. YouTube được đánh giá theo Title + Description; Zalo theo Title + Trích dẫn. Hashtag không được dùng để bù cho caption thiếu chủ đề.
+
 ## Bước 2 — Tạo ảnh bìa
 
 1. Dán **Bản tổng hợp** vào ô **Nội dung đã chốt**.
