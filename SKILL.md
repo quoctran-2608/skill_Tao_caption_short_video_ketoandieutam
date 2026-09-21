@@ -16,7 +16,7 @@ Kết quả gồm **4 khối copy nền tảng + 1 writing block Dữ liệu wor
 
 Bốn khối đầu phục vụ copy/paste trực tiếp lên nền tảng. Hashtag nằm ngay cuối caption/description.
 
-Block **Dữ liệu workflow** giữ field có cấu trúc và là block duy nhất cần copy sang bước tiếp theo.
+Writing block **Dữ liệu workflow** giữ field có cấu trúc và là block duy nhất cần copy sang bước tiếp theo.
 
 ## Bước 2 — Cover
 
@@ -50,6 +50,6 @@ PUBLISH SKILL giữ nguyên nội dung, tách Caption và Hashtags theo field tr
 
 ## Workflow
 
-**Nguồn video → 4 block đăng trực tiếp + Dữ liệu workflow → Cover → Publish → Google Sheet**
+**Nguồn video → 4 khối copy đăng trực tiếp + Dữ liệu workflow → Cover → Publish → Google Sheet**
 
 Không dùng file này làm skill thực thi.
