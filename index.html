@@ -292,7 +292,7 @@
     <span class="bridge-tag">Dữ liệu dùng chung cho Bước 2 + Bước 3</span>
     <h2>Kết quả đã duyệt từ ChatGPT</h2>
     <p class="hint">
-      Sau Bước 1, kiểm tra nội dung trong ChatGPT. Khi đã chốt, copy nguyên writing block và dán <b>một lần duy nhất</b> vào đây.
+      Sau Bước 1, kiểm tra nội dung trong ChatGPT. Khi đã chốt, chỉ copy writing block <b>Dữ liệu workflow</b> và dán <b>một lần duy nhất</b> vào đây.
       Bước 2 và Bước 3 sẽ cùng dùng lại dữ liệu này.
     </p>
     <textarea id="approvedInput" placeholder="Dán writing block Dữ liệu workflow đã duyệt vào đây..."></textarea>
@@ -523,9 +523,9 @@ QUY TẮC ƯU TIÊN:
 ${publishSkill}
 </PUBLISH_SKILL>
 
-<NOI_DUNG_DA_DUYET>
+<DU_LIEU_WORKFLOW_DA_DUYET>
 ${approved}
-</NOI_DUNG_DA_DUYET>
+</DU_LIEU_WORKFLOW_DA_DUYET>
 ${extraBlock}
 Hãy xử lý và ghi vào Google Sheet theo đúng PUBLISH SKILL.`;
   }
@@ -577,7 +577,7 @@ Hãy xử lý và ghi vào Google Sheet theo đúng PUBLISH SKILL.`;
     if (!approved) {
       publishPrompt.value = "";
       copyPublishBtn.disabled = true;
-      setStatus("publishCopyStatus", "Hãy dán writing block đã duyệt ở phần phía trên trước.", "error");
+      setStatus("publishCopyStatus", "Hãy dán writing block Dữ liệu workflow đã duyệt ở phần phía trên trước.", "error");
       approvedInput.focus();
       return;
     }
