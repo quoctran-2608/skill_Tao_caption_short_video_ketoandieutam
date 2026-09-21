@@ -4,7 +4,7 @@
 
 Từ:
 
-1. writing block **Dữ liệu workflow** đã được user duyệt ở Bước 1; và
+1. writing block **Bản tổng hợp** đã được user duyệt ở Bước 1; và
 2. một ảnh chụp khung hình từ chính video do user đính kèm trong ChatGPT;
 
 tạo **một ảnh bìa dọc 9:16** dùng làm master cover cho short video.
@@ -24,14 +24,22 @@ Khi đã có ảnh frame, dùng chính ảnh đó làm nền tảng để tạo 
 
 ## 3. Hiểu nội dung
 
-Đọc writing block **Dữ liệu workflow** đã duyệt để hiểu:
+Đọc writing block **Bản tổng hợp** đã duyệt để hiểu:
 
 - chủ đề video;
 - thông điệp chính;
 - ngữ cảnh;
 - Cover Text.
 
-Không cần đọc lại kịch bản gốc hoặc 4 writing block đăng trực tiếp nếu Dữ liệu workflow đã đủ.
+Không cần đọc lại kịch bản gốc hoặc 4 writing block đăng trực tiếp nếu Bản tổng hợp đã đủ.
+
+Nếu input có `COVER_TEXT_USER` và giá trị không trống:
+
+- ưu tiên cao nhất: dùng **nguyên văn** nội dung user nhập làm Cover Text;
+- không sửa từ, rút gọn, đổi dấu câu hoặc tối ưu lại;
+- bỏ qua Cover Text có sẵn trong Bản tổng hợp.
+
+Nếu `COVER_TEXT_USER` trống, dùng Cover Text có sẵn trong Bản tổng hợp.
 
 Nếu có trường:
 
@@ -41,7 +49,7 @@ Nếu có trường:
 
 thì dùng **nguyên văn Cover Text đó**.
 
-Cover Text đã duyệt là dữ liệu khóa.
+Cover Text được chọn theo thứ tự ưu tiên trên là dữ liệu khóa.
 
 Không được:
 
