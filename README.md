@@ -16,15 +16,22 @@ Người dùng thao tác trên **một trang duy nhất**, còn logic được t
 ## Bước 1 — Tạo nội dung
 
 1. Dán nguồn video vào `index.html`.
-2. Tạo prompt và copy sang ChatGPT.
-3. ChatGPT trả **4 khối copy riêng + 1 writing block Dữ liệu workflow**:
+2. Nếu muốn tự chọn chữ trên ảnh bìa, nhập **Cover Text tùy chọn**. Để trống thì AI tự tạo như bình thường.
+3. Tạo prompt và copy sang ChatGPT.
+4. ChatGPT trả **4 khối copy riêng + 1 writing block Dữ liệu workflow**:
    - TikTok
    - Facebook Reels
    - YouTube Shorts
    - Zalo OA
    - Dữ liệu workflow
-4. Bốn khối nền tảng được tối ưu để copy/paste nhanh. Hashtag nằm ngay cuối caption/description, không tách thành một mục riêng.
-5. Writing block **Dữ liệu workflow** giữ các field có cấu trúc để dùng cho Cover và Publish.
+5. Bốn khối nền tảng được tối ưu để copy/paste nhanh. Hashtag nằm ngay cuối caption/description, không tách thành một mục riêng.
+6. Writing block **Dữ liệu workflow** giữ các field có cấu trúc để dùng cho Cover và Publish.
+
+## Cover Text tùy chọn
+
+- Để trống: CONTENT SKILL tự tạo Cover Text theo nội dung video.
+- Có nhập: dùng nguyên văn Cover Text user nhập và đưa giá trị đó vào Dữ liệu workflow.
+- AI không tự tối ưu lại Cover Text user nhập; nếu có mâu thuẫn đáng kể với video thì chỉ cảnh báo ở QA.
 
 ## Độ dài và hình thức
 
