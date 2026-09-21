@@ -6,7 +6,7 @@ Workflow được tách thành 3 skill nhưng dùng chung trên `index.html`.
 
 Dùng `CONTENT_SKILL.md`.
 
-Kết quả gồm **5 writing block riêng**:
+Kết quả gồm **4 khối copy nền tảng + 1 writing block Dữ liệu workflow**:
 
 1. TikTok
 2. Facebook Reels
@@ -14,7 +14,7 @@ Kết quả gồm **5 writing block riêng**:
 4. Zalo OA
 5. Dữ liệu workflow
 
-Bốn block đầu phục vụ copy/paste trực tiếp lên nền tảng. Hashtag nằm ngay cuối caption/description.
+Bốn khối đầu phục vụ copy/paste trực tiếp lên nền tảng. Hashtag nằm ngay cuối caption/description.
 
 Block **Dữ liệu workflow** giữ field có cấu trúc và là block duy nhất cần copy sang bước tiếp theo.
 
