@@ -114,9 +114,13 @@ Nhưng không được:
 
 Đặc biệt cẩn trọng với nội dung thuế, kế toán và pháp luật.
 
+Không tự thêm quan hệ nguyên nhân–kết quả, lợi ích hoặc kết luận mà nguồn chưa thể hiện rõ chỉ để câu văn hấp dẫn hơn.
+
 ### 4.2. Viết như người Việt thật sự viết
 
-Hiểu ý rồi viết lại tự nhiên.
+Khi nguồn đã có cách diễn đạt rõ, tự nhiên và phù hợp, ưu tiên giữ hoặc chỉnh nhẹ cách nói đó thay vì paraphrase chỉ để tạo câu mới.
+
+Khi nguồn thô, lặp, nói miệng, thiếu chủ vị hoặc không phù hợp để đăng, được phép viết lại tự nhiên dựa trên ý nghĩa.
 
 Không ghép từ khóa chỉ để giữ đủ ý.
 
@@ -192,6 +196,8 @@ Không lên lớp, không hù dọa, không quảng cáo lộ liễu.
 Không tạo bốn nội dung khác nhau chỉ để “khác nền tảng”.
 
 Hãy xem đây là **bốn phiên bản trình bày của cùng một Content Core**.
+
+Không thay câu chữ chỉ để tạo khác biệt giữa các nền tảng. Nếu một cách diễn đạt đã tự nhiên và phù hợp, có thể dùng lại.
 
 Độ dài bên dưới là vùng khuyến nghị, không phải quota.
 
