@@ -2,69 +2,44 @@
 
 Bộ công cụ tạo prompt cho quy trình short video của **Kế Toán Diệu Tâm**.
 
-Người dùng thao tác trên **một trang duy nhất**, còn logic được tách thành 3 skill.
-
 ## Cấu trúc
 
-- `CONTENT_SKILL.md`: Bước 1 — tạo nội dung đa kênh, Cover Text và Dữ liệu workflow.
-- `COVER_SKILL.md`: Bước 2 — dùng Dữ liệu workflow + frame video để tạo ảnh bìa 9:16.
-- `PUBLISH_SKILL.md`: Bước 3 — ghi Dữ liệu workflow đã duyệt vào Google Sheet.
-- `index.html`: giao diện duy nhất cho cả 3 bước.
-- `publish.html`: file chuyển hướng cũ về Bước 3.
-- `SKILL.md`: hướng dẫn cấu trúc workflow.
+- `CONTENT_SKILL.md`: tạo nội dung TikTok, Facebook Reels, YouTube Shorts, Zalo OA và Cover Text đề xuất.
+- `COVER_SKILL.md`: tạo ảnh bìa 9:16 từ Bản tổng hợp + frame video.
+- `PUBLISH_SKILL.md`: ghi Bản tổng hợp đã chốt vào Google Sheet.
+- `index.html`: giao diện 3 bước.
 
 ## Bước 1 — Tạo nội dung
 
-1. Dán nguồn video vào `index.html`.
-2. Nếu muốn tự chọn chữ trên ảnh bìa, nhập **Cover Text tùy chọn**. Để trống thì AI tự tạo như bình thường.
-3. Tạo prompt và copy sang ChatGPT.
-4. ChatGPT trả **4 khối copy riêng + 1 writing block Dữ liệu workflow**:
-   - TikTok
-   - Facebook Reels
-   - YouTube Shorts
-   - Zalo OA
-   - Dữ liệu workflow
-5. Bốn khối nền tảng được tối ưu để copy/paste nhanh. Hashtag nằm ngay cuối caption/description, không tách thành một mục riêng.
-6. Writing block **Dữ liệu workflow** giữ các field có cấu trúc để dùng cho Cover và Publish.
+1. Dán nguồn video.
+2. Tạo prompt và gửi sang ChatGPT.
+3. ChatGPT trả 4 khối copy để đăng và 1 **Bản tổng hợp**.
 
-## Cover Text tùy chọn
-
-- Để trống: CONTENT SKILL tự tạo Cover Text theo nội dung video.
-- Có nhập: dùng nguyên văn Cover Text user nhập và đưa giá trị đó vào Dữ liệu workflow.
-- AI không tự tối ưu lại Cover Text user nhập; nếu có mâu thuẫn đáng kể với video thì chỉ cảnh báo ở QA.
-
-## Độ dài và hình thức
-
-- TikTok: 1–3 câu; thường khoảng 100–250 ký tự phần caption chính; 3–5 hashtag.
-- Facebook Reels: 1–3 câu; thường khoảng 100–220 ký tự phần caption chính; 2–4 hashtag.
-- YouTube Shorts: description động 1–2 câu; thường khoảng 100–180 ký tự; footer cố định; 3–5 hashtag.
-- Zalo OA: trích dẫn 1–2 câu; thường khoảng 120–240 ký tự; tối đa 300; không hashtag.
-- Emoji mặc định không dùng; chỉ dùng 0–1 khi thực sự có ích và tự nhiên.
-- Các vùng độ dài là khuyến nghị, không phải quota.
-
-## Kết quả đã duyệt
-
-Sau khi duyệt Bước 1:
-
-1. Copy **chỉ writing block Dữ liệu workflow**.
-2. Dán một lần vào ô **Kết quả đã duyệt từ ChatGPT** trong `index.html`.
-
-Bước 2 và Bước 3 cùng dùng lại block này. Không cần dán lại kịch bản hoặc 4 khối nền tảng.
+Bốn khối nền tảng đã gắn hashtag vào cuối caption/description để copy nhanh.
 
 ## Bước 2 — Tạo ảnh bìa
 
-1. Bấm **Tạo prompt ảnh bìa**.
-2. Copy prompt sang ChatGPT.
-3. Đính kèm một frame đẹp từ chính video.
-4. ChatGPT dùng Cover Text đã duyệt + frame thật để tạo cover dọc 9:16.
+1. Dán **Bản tổng hợp** vào ô **Nội dung đã chốt**.
+2. Nếu muốn tự chọn chữ trên ảnh, nhập **Chữ trên ảnh bìa**.
+3. Để trống field này thì dùng Cover Text AI đã đề xuất trong Bản tổng hợp.
+4. Tạo prompt, gửi sang ChatGPT và đính kèm một frame từ video.
+
+Thứ tự ưu tiên chữ trên ảnh:
+
+**user nhập → Cover Text trong Bản tổng hợp → Cover Skill tự tạo nếu thiếu cả hai.**
 
 ## Bước 3 — Ghi Sheet
 
-1. Dữ liệu workflow được lấy từ ô dùng chung.
-2. Có thể bổ sung `Video_File_ID`, `Thumbnail_File_ID`, `Schedule_At`.
-3. Tạo prompt Bước 3 và copy sang ChatGPT có quyền truy cập Google Sheet.
-4. PUBLISH SKILL tách Caption và Hashtags từ Dữ liệu workflow để ghi đúng cột.
+Bước 3 dùng lại **Nội dung đã chốt** ở Bước 2.
+
+Có thể bổ sung:
+
+- `Video_File_ID`
+- `Thumbnail_File_ID`
+- `Schedule_At`
+
+Sau đó tạo prompt Publish và gửi sang ChatGPT có quyền truy cập Google Sheet.
 
 ## Workflow
 
-`Nguồn video → 4 khối copy đăng trực tiếp + Dữ liệu workflow → Cover → Publish → Google Sheet`
+`Nguồn video → Content → Bản tổng hợp → Cover → Publish → Google Sheet`
