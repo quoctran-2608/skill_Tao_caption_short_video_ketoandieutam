@@ -1,22 +1,20 @@
 # KẾ TOÁN DIỆU TÂM — SHORT VIDEO WORKFLOW
 
-Workflow được tách thành 3 skill nhưng dùng chung trên `index.html`.
+Workflow có 3 bước trên `index.html`.
 
 ## Bước 1 — Content
 
 Dùng `CONTENT_SKILL.md`.
 
-Kết quả gồm **4 khối copy nền tảng + 1 writing block Dữ liệu workflow**:
+Kết quả:
 
 1. TikTok
 2. Facebook Reels
 3. YouTube Shorts
 4. Zalo OA
-5. Dữ liệu workflow
+5. **Bản tổng hợp**
 
-Bốn khối đầu phục vụ copy/paste trực tiếp lên nền tảng. Hashtag nằm ngay cuối caption/description.
-
-Writing block **Dữ liệu workflow** giữ field có cấu trúc và là block duy nhất cần copy sang bước tiếp theo.
+Bốn khối đầu dùng để copy/paste trực tiếp. **Bản tổng hợp** là khối dùng cho các bước sau.
 
 ## Bước 2 — Cover
 
@@ -24,32 +22,28 @@ Dùng `COVER_SKILL.md`.
 
 Đầu vào:
 
-**Dữ liệu workflow đã duyệt + một frame chụp từ video**
+- **Bản tổng hợp** đã chốt;
+- một frame từ video;
+- **Chữ trên ảnh bìa** nếu user muốn tự nhập.
 
-Kết quả:
+Ưu tiên chữ trên ảnh:
 
-**một ảnh bìa dọc 9:16**
+**user nhập → Cover Text trong Bản tổng hợp → tự tạo nếu thiếu.**
 
-Cover Skill dùng nguyên văn Cover Text đã duyệt.
+Kết quả: một ảnh bìa dọc 9:16.
 
 ## Bước 3 — Publish
 
 Dùng `PUBLISH_SKILL.md`.
 
-Đầu vào:
+Đầu vào: **Bản tổng hợp** đã chốt.
 
-**Dữ liệu workflow đã duyệt**
+Có thể bổ sung `Video_File_ID`, `Thumbnail_File_ID`, `Schedule_At`.
 
-Có thể bổ sung:
-
-- `Video_File_ID`
-- `Thumbnail_File_ID`
-- `Schedule_At`
-
-PUBLISH SKILL giữ nguyên nội dung, tách Caption và Hashtags theo field trong Dữ liệu workflow rồi upsert `VIDEO_MASTER` + `PUBLISH_QUEUE`.
+PUBLISH SKILL giữ nguyên nội dung và upsert `VIDEO_MASTER` + `PUBLISH_QUEUE`.
 
 ## Workflow
 
-**Nguồn video → 4 khối copy đăng trực tiếp + Dữ liệu workflow → Cover → Publish → Google Sheet**
+**Nguồn video → Content → Bản tổng hợp → Cover → Publish → Google Sheet**
 
 Không dùng file này làm skill thực thi.
