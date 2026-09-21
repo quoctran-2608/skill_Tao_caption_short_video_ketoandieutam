@@ -23,7 +23,7 @@ Người dùng thao tác trên **một trang duy nhất**, còn logic được t
    - YouTube Shorts
    - Zalo OA
    - Dữ liệu workflow
-4. Bốn block nền tảng được tối ưu để copy/paste nhanh. Hashtag nằm ngay cuối caption/description, không tách thành một mục riêng.
+4. Bốn khối nền tảng được tối ưu để copy/paste nhanh. Hashtag nằm ngay cuối caption/description, không tách thành một mục riêng.
 5. Block **Dữ liệu workflow** giữ các field có cấu trúc để dùng cho Cover và Publish.
 
 ## Độ dài và hình thức
