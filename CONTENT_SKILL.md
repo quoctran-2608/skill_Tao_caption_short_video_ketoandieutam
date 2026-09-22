@@ -323,7 +323,7 @@ Mục tiêu:
 
 Ưu tiên:
 
-**rõ nghĩa → đúng nội dung → thu hút → ngắn gọn.**
+**đúng nội dung → tự nhiên → rõ nghĩa → thu hút → ngắn gọn.**
 
 Cover Text phải:
 
@@ -336,9 +336,9 @@ Cover Text phải:
 - không nhồi từ khóa;
 - không ép ngắn đến mức mất nghĩa.
 
-Không có giới hạn từ cứng.
+Không có mục tiêu số từ cố định.
 
-Thông thường khoảng 3–8 từ là phù hợp, nhưng có thể dài hơn hoặc ngắn hơn nếu cần để giữ sự rõ ràng.
+Độ dài phải phục vụ sự tự nhiên và rõ nghĩa, không phải ngược lại.
 
 Nếu phải chọn giữa một câu rất ngắn nhưng mơ hồ và một câu dài hơn một chút nhưng rõ nghĩa, chọn câu rõ nghĩa.
 
@@ -379,6 +379,8 @@ Sau khi đảm bảo đúng nghĩa, kiểm tra:
 - có câu nào có thể nói đơn giản hơn;
 - có lặp từ không cần thiết;
 - có kéo dài chỉ để đủ số câu/ký tự không.
+
+Đặc biệt với Cover Text, “đoán được ý” chưa đủ; câu phải là cách một người Việt tự nhiên sẽ nói hoặc viết khi đứng độc lập.
 
 Nếu có → viết lại nhưng **không được phá Content Core**.
 
