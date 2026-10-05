@@ -84,7 +84,27 @@ Chỉ giữ những chi tiết thật sự cần để làm rõ Chủ thể cố
 
 Không cố đưa toàn bộ nội dung video vào caption.
 
-### 3.4. Quy tắc bất biến
+### 3.4. Điểm vào nội dung
+
+Sau khi xác định Chủ thể cốt lõi và Thông điệp cốt lõi, xác định một **Điểm vào nội dung** nếu nguồn thực sự có.
+
+Điểm vào nội dung là chi tiết giúp người xem mục tiêu nhận ra vấn đề nhanh nhất, ví dụ:
+
+- một quan niệm phổ biến nhưng chưa đầy đủ;
+- một sự tương phản rõ;
+- một tình huống quen thuộc;
+- một câu hỏi người kinh doanh thực sự có thể gặp;
+- một câu nói trong nguồn diễn đạt vấn đề cụ thể và tự nhiên.
+
+Điểm vào nội dung không phải một Content Core mới và không được thay đổi Thông điệp cốt lõi.
+
+Nó chỉ giúp chọn cách mở caption.
+
+Nếu nguồn đã có một cách diễn đạt cụ thể, tự nhiên và có sức nhận biết cao, ưu tiên khai thác cách diễn đạt đó thay vì thay bằng một nhận định khái quát.
+
+Không được tự tạo tension, vấn đề, nỗi sợ hoặc mâu thuẫn mà nguồn không hỗ trợ.
+
+### 3.5. Quy tắc bất biến
 
 Sau khi Content Core đã được xác định:
 
@@ -140,6 +160,8 @@ Các đại từ, cách gọi chung hoặc cách diễn đạt thay thế chỉ 
 
 ### 4.4. Hấp dẫn nhưng không giật
 
+Caption cần tạo được lý do tự nhiên để người đúng đối tượng dừng lại, nhưng lý do đó phải xuất phát từ nội dung thật của video.
+
 Có thể dùng:
 
 - tương phản;
@@ -148,9 +170,22 @@ Có thể dùng:
 - nhận định ngắn;
 - cách nói gần trải nghiệm người kinh doanh.
 
+Nếu nguồn đã có một tình huống, câu hỏi, sự tương phản hoặc cách nói cụ thể mạnh hơn một nhận định khái quát, ưu tiên dùng điểm cụ thể đó làm cách vào nội dung.
+
+Không làm nhạt một ý cụ thể trong nguồn thành các câu chung chung như:
+
+- “cần quản lý tốt hơn”;
+- “cách làm cũ không còn phù hợp”;
+- “cần rõ ràng hơn”;
+- “doanh nghiệp cần chú ý”;
+
+khi nguồn cho phép nói cụ thể hơn.
+
+Không tự tạo drama, hậu quả, nỗi sợ hoặc mâu thuẫn chỉ để tăng sức hút.
+
 Không cần cố viết “sâu sắc”.
 
-Câu đơn giản, rõ và đúng tốt hơn câu hoa mỹ nhưng mơ hồ.
+Câu đơn giản, cụ thể, rõ và đúng tốt hơn câu hoa mỹ hoặc khái quát.
 
 ### 4.5. Ngắn và đủ dùng
 
@@ -216,6 +251,10 @@ Caption:
 - ưu tiên 1–3 câu;
 - thường khoảng 100–250 ký tự, không tính hashtag;
 - vào thẳng vấn đề;
+- câu đầu phải tự làm rõ Chủ thể cốt lõi;
+- nếu nguồn có Điểm vào nội dung rõ, ưu tiên dùng nó ngay ở câu đầu;
+- câu đầu nên cho người đúng đối tượng một lý do tự nhiên để xem tiếp;
+- ưu tiên cụ thể hơn khái quát;
 - đọc nhanh;
 - có nhịp;
 - không tóm tắt toàn bộ video.
@@ -237,7 +276,11 @@ Caption:
 
 - ưu tiên 1–3 câu;
 - thường khoảng 100–220 ký tự, không tính hashtag;
-- câu đầu đủ rõ để đứng riêng;
+- câu đầu phải tự làm rõ Chủ thể cốt lõi;
+- câu đầu phải đủ rõ để đứng riêng;
+- nếu nguồn có Điểm vào nội dung rõ, ưu tiên dùng nó ở câu đầu;
+- câu đầu nên tạo được một lý do tự nhiên để xem tiếp bằng một tương phản, tình huống quen thuộc, câu hỏi hoặc nhận định cụ thể có cơ sở trong nguồn;
+- ưu tiên cách nói cụ thể, đời thường hơn nhận định quản trị chung chung;
 - có thể xuống dòng để dễ đọc;
 - không biến thành một bài viết dài.
 
@@ -370,13 +413,29 @@ Nếu một trong ba câu trả lời không đạt → sửa phiên bản đó.
 
 Hashtag không được tính là nơi xác lập chủ đề.
 
-### 8.3. Kiểm tra ngôn ngữ
+### 8.3. Hook Test cho TikTok và Facebook Reels
+
+Chỉ đọc câu đầu tiên của caption và hỏi:
+
+1. Người xem có nhận ra ngay video đang nói về vấn đề gì không?
+2. Câu này có cụ thể hay đang dùng một nhận định chung chung?
+3. Người đúng đối tượng có một lý do tự nhiên để muốn xem tiếp không?
+4. Nếu nguồn có một tình huống, câu hỏi, sự tương phản hoặc cách nói cụ thể hơn, caption hiện tại có đang làm nó nhạt đi không?
+5. Có đang thay một trải nghiệm đời thực bằng ngôn ngữ kiểu báo cáo, tư vấn hoặc quản trị chung chung không?
+
+Nếu câu đầu đúng về nghĩa nhưng quá chung chung, trừu tượng, mang giọng hành chính hoặc làm yếu một Điểm vào nội dung tốt có sẵn trong nguồn → viết lại.
+
+Không được sửa bằng cách thêm giật gân, nỗi sợ hoặc kết luận mà nguồn không có.
+
+### 8.4. Kiểm tra ngôn ngữ
 
 Sau khi đảm bảo đúng nghĩa, kiểm tra:
 
 - có câu nào gượng hoặc giống AI viết không;
 - có câu nào quá trừu tượng;
 - có câu nào có thể nói đơn giản hơn;
+- có dùng từ khái quát trong khi nguồn cho phép nói cụ thể hơn không;
+- có câu nào đúng nhưng nghe giống văn bản tư vấn/doanh nghiệp hơn cách người Việt thực sự nói không;
 - có lặp từ không cần thiết;
 - có kéo dài chỉ để đủ số câu/ký tự không.
 
